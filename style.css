@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------【サンプルコメント】*/
+/* サンプルコメント（example）
+----------------------------------------------- */
+
+body	{
+	font-size: 14px;
+	font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	color: rgba(255,255,255,0.8);
+	background-image: url(img/yosemite-1590012_1280.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*--------------------------------------------------------------【レイアウト】*/
+
+.indexWrapper {
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+}
+
+.mainContents {
+	padding: 20px 30px;
+	min-height: 100vh;
+}
+
+.vh100 {
+	margin: 0 -15px;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	min-height: 100vh;
+}
+
+.vh100--side {
+	background: rgba(0,0,0,0.6);
+	border-right: 2px solid rgba(0,0,0,0.8);
+	box-shadow: 2px 0 rgba(0,0,0,0.4);
+}
+
+.vh100--side2 {
+	background: rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	box-shadow: 2px 0 rgba(0,0,0,0.4);
+}
+
+/*--------------------------------------------------------------【モジュール】*/
+
+/* Bootstrapの調整用差分
+----------------------------------------------- */
+
+.row {
+	overflow: hidden;
+}
+
+.label-ghost {
+	border: 1px solid rgba(255,255,255,0.7);
+}
+
+.breadcrumb {
+	background: rgba(255,255,255,0.1);
+}
+
+.breadcrumb > li > a {
+	color: rgba(255,255,255,0.6);
+}
+
+.breadcrumb > .active {
+	color: #FFF;
+}
+
+/* ユーザーカード
+----------------------------------------------- */
+
+.userCard {
+	padding: 30px 0;
+}
+
+.userCard__photo {
+	margin: 0 auto 20px;
+	height: 120px;
+	width: 120px;
+	border: 2px solid rgba(255,255,255,1);
+	border-radius: 50%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.userCard__name {
+	color: #FFF;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.userCard__name span {
+	display: block;
+	font-size: 12px;
+}
+
+.userCard__about {
+	color: #FFF;
+	padding: 0 20px;
+}
+
+/* アイコン付きリンク
+----------------------------------------------- */
+.iconLinks {
+	text-align: center;
+}
+
+.iconLinks span {
+	display: block;
+	font-size: 11px;
+}
+
+.iconLinks a {
+	display: block;
+	padding: 20px 0;
+	color: #FFF;
+	opacity: 0.7;
+	transition: .2s;
+}
+
+.iconLinks a:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+.iconLinks a .fa {
+	font-size: 36px;
+}
+
+/* イントロ
+----------------------------------------------- */
+
+.topIntro {
+	margin: 40px 0;
+}
+
+.topIntro__title {
+	text-align: center;
+	font-size: 16px;
+	margin: 20px 0;
+	padding: 10px 0;
+}
+
+.topIntro__title--lv2 {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+/* カード
+----------------------------------------------- */
+
+.itemCard {
+	margin: 0 0 30px;
+	padding-bottom: 10px;
+}
+
+.itemCard__photo {}
+
+.itemCard__photo span {
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,0.5);
+	line-height: 80px;
+}
+
+.itemCard__photo .fa {
+	font-size: 30px;
+	position: relative;
+	top: 3px;
+}
+
+.itemCard__title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------【レスポンシブ対応】*/
+
+@media only screen and (max-width:992px) {
+
+	.vh100 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		min-height: 100%;
+	}
+
+	.mainContents {
+		padding: 20px 0;
+	}
+
+	.itemCard {
+		border-bottom: 1px dashed rgba(255,255,255,0.5);
+	}
+
+}
+
+@media only screen and (max-width:960px) {}
+
+/* iPad縦(portrait) */
+@media only screen and (max-width:768px) {}
+
+/* smartphone横(landscape) */
+@media only screen and (max-width:640px) {}
+
+/* iPhone横(landscape) */
+@media only screen and (max-width:480px) {}
+
+/* smartphone縦(portrait) */
+@media only screen and (max-width:360px) {}
+
+/* iPhone縦(portrait) */
+@media only screen and (max-width:320px) {}
+
+/* viewportの仕様上、指定可能な最小幅 */
+@media only screen and (max-width:200px) {}
